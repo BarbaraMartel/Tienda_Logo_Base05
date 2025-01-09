@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra</title>
+    <link rel="stylesheet" href="estiloC3.css">
+</head>
+
+<body>
+    <DIV id="contenedor" style="opacity: 1;">
+        <header>
+            <div id="logo">
+
+            </div>
+            <div id="search_nav">
+                <div id="search">
+                    Busca en esta página: <input type="search">
+
+                    <input type="submit" value="Buscar">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../tienda.html">Tienda</a></li>
+                        <li><a href="../../Blog/blog.html">Blog</a></li>
+                        <li><a href="../../About_us/about.html">¿Quiénes somos?</a></li>
+                        <li><a href="../../Contacto/contacto.html">Contacto</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        <!--Fin Cabezera-->
+        <hr>
+        <div id="opciones">
+            <!--Ini linea de opciones-->
+            <a href="../Tienda.html"><button>Regreso</button></a>
+
+            <!--img de ayuda-->
+            <a href="#help"><img src="https://img.icons8.com/material-outlined/24/000000/help.png" /></a>
+        </div>
+
+        <section id="compra">
+            <!--Ini seccion de compra-->
+            <div id="imgPequeñas">
+                <!--Botones cambio img principal-->
+                <!--imgP cambiables-->
+                <button onclick="cambio1()" ><img id ="imgP1" src="../img-ropa/Parka1.jpg" alt="" style="opacity: 0.8;"></button><br>
+                <button onclick="cambio2()" ><img id ="imgP2" src="../img-ropa/Parka1-2.jpg" alt=""></button><br>
+                <button onclick="cambio3()" ><img id ="imgP3" src="../img-ropa/Parka1-3.jpg" alt=""></button><br>
+                <button onclick="cambio4()" ><img id ="imgP4" src="../img-ropa/Parka1-4.jpg" alt=""></button><br>
+            </div>
+
+
+            <div id="imgGrande">
+                <!--Img Grande-->
+                <img id="imgG" src="../img-ropa/Parka1.jpg">    <!--Para cambiar imgG-->
+            </div>
+
+            <div id="descripcion">
+                <!--Ini contenedor de Descripcion-->
+                <div id="des1">
+                    <h2>PARKA TÉCNICA ACOLCHADA</h2>
+                    <p>PARKA ACOLCHADA EN SU INTERIOR. MANGA LARGA. BOLSILLOS DE SOLAPA EN CADERA Y DETALLE DE BOLSILLO INTERIOR. BAJO AJUSTABLE CON ELÁSTICO EN LATERALES. CIERRE FRONTAL CON CREMALLERA OCULTA POR SOLAPA CON BOTONES A PRESIÓN.</p>
+                </div>
+
+                <div id="des2">
+                    <!--seleccion de color y talla-->
+                    <fieldset>
+                        <!--SELECION DE COLORES-->
+                        <legend>Colores</legend>
+                        <button id="color1" onclick="color1()" value="Marino"></button>
+                        <button id="color2" onclick="color2()" value="Negro"></button>
+                        <button id="color3" onclick="color3()" value="Verde"></button>
+                    </fieldset>
+                    <select name="talla_select" id="talla_select" onchange="talla_select()">
+                        <option value=0>talla</option>
+                        <option value=1>S</option>
+                        <option value=2>M</option>
+                        <option value=3>L</option>
+                    </select>
+                </div>
+
+                <div id="des3">
+                    <p id="precio">79,95 EUR</p>
+                    <button id="comprar" onclick="comprar()">Comprar</button>
+                </div>
+            </div>
+
+        </section>
+        <section id="extra">
+            <!--Ini seccion de Prendas de Interes-->
+            <h3>Prendas de interes</h3>
+
+            <div id="prendas_interes">
+                <div id="cuadro uno">
+                    <a href="../Compra.html">
+                        <img src="../img-ropa/Abrigo1-4.jpg" alt="">
+                        <p>ABRIGO RELAXED FIT</p>
+                    </a>
+                </div>
+                <div id="cuadro dos">
+                    <a href="Compra6.html">
+                        <img src="../img-ropa/Parka4-4.jpg" alt="">
+                        <p>PARKA ACOLCHADA CAPUCHA</p>
+                    </a>
+                </div>
+                <div id="cuadro tres">
+                    <a href="Compra8.html">
+                        <img src="../img-ropa/Camisa2-4.jpg" alt="">
+                        <p>CAMISA CUADROS FRANELA</p>
+                    </a>
+                </div>
+                <div id="cuadro cuatro">
+                    <a href="Compra12.html">
+                        <img src="../img-ropa/Pantalón3-4.jpg" alt="">
+                        <p>PANTALÓN PUNTO CONJUNTO</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <!--Ini Footer-->
+        <footer>
+            <address>
+                <br><br>
+                Logo
+                <br>
+                Tienda de ropa masculina
+                <br>
+                C. Ignacio Merino 525,
+                <br>
+                Miraflores 15074
+                <br><br><br>
+            </address>
+            <div id="horarios">
+                <br><br>
+                Nuestros horarios<br><br>
+                Lunes a viernes:<br>
+                De 9am a 7pm.<br>
+                Sábados y domingos:<br>
+                De 10am a 10pm.
+                <br><br><br><br>
+            </div>
+
+            <ul>
+                <br>
+                <li><a href="http://#" target="_blank">Nuestros proveedores</a></li>
+                <li><a href="http://#" target="_blank">Locales cercanos</a></li>
+                <li><a href="http://#" target="_blank">Trabaja con nosotros</a></li>
+                <li><a href="http://#" target="_blank">Libro de reclamaciones</a></li>
+                <li><a href="http://#" target="_blank">Política de privacidad</a></li>
+                <br><br>
+            </ul>
+            <ul>
+                <br>
+                <li><a href="http://#" target="_blank">Whatsapp</a></li>
+                <li><a href="http://#" target="_blank">Instagram</a></li>
+                <li><a href="http://#" target="_blank">Facebook</a></li>
+                <li><a href="http://#" target="_blank">Twitter</a></li>
+                <li><a href="http://#" target="_blank">Pinterest</a></li>
+                <br><br>
+            </ul>
+        </footer>
+
+        <script src="../CompraScript.js"></script>
+    </DIV>
+    <DIV id="CuadroPedido">
+        <button id="cerrar" onclick="cerrar()">X</button>
+        <div id="pedido">
+            <h1>Pedido</h1>
+            <p>PARKA TÉCNICA ACOLCHADA</p>
+            <p>Color: <span id="colorM">Seleccione un Color</span></p>
+            <p>Talla: <span id="talla">Seleccione una Talla</span></p>
+            <p>Precio: 79,95 EUR</p>
+
+        </div>
+    </DIV>
+</body>
+
+</html>

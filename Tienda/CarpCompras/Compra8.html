@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra</title>
+    <link rel="stylesheet" href="estiloC8.css">
+</head>
+
+<body>
+    <DIV id="contenedor" style="opacity: 1;">
+        <header>
+            <div id="logo">
+
+            </div>
+            <div id="search_nav">
+                <div id="search">
+                    Busca en esta página: <input type="search">
+
+                    <input type="submit" value="Buscar">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../tienda.html">Tienda</a></li>
+                        <li><a href="../../Blog/blog.html">Blog</a></li>
+                        <li><a href="../../About_us/about.html">¿Quiénes somos?</a></li>
+                        <li><a href="../../Contacto/contacto.html">Contacto</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        <!--Fin Cabezera-->
+        <hr>
+        <div id="opciones">
+            <!--Ini linea de opciones-->
+            <a href="../Tienda.html"><button>Regreso</button></a>
+
+            <!--img de ayuda-->
+            <a href="#help"><img src="https://img.icons8.com/material-outlined/24/000000/help.png" /></a>
+        </div>
+
+        <section id="compra">
+            <!--Ini seccion de compra-->
+            <div id="imgPequeñas">
+                <!--Botones cambio img principal-->
+                <!--imgP cambiables-->
+                <button onclick="cambio1()" ><img id ="imgP1" src="../img-ropa/Camisa2.jpg" alt="" style="opacity: 0.8;"></button><br>
+                <button onclick="cambio2()" ><img id ="imgP2" src="../img-ropa/Camisa2-2.jpg" alt=""></button><br>
+                <button onclick="cambio3()" ><img id ="imgP3" src="../img-ropa/Camisa2-3.jpg" alt=""></button><br>
+                <button onclick="cambio4()" ><img id ="imgP4" src="../img-ropa/Camisa2-4.jpg" alt=""></button><br>
+            </div>
+
+
+            <div id="imgGrande">
+                <!--Img Grande-->
+                <img id="imgG" src="../img-ropa/Camisa2.jpg">    <!--Para cambiar imgG-->
+            </div>
+
+            <div id="descripcion">
+                <!--Ini contenedor de Descripcion-->
+                <div id="des1">
+                    <h2>CAMISA CUADROS FRANELA</h2>
+                    <p>CAMISA RELAXED FIT CON CUELLO SOLAPA Y MANGA LARGA ACABADA EN PUÑO CON BOTÓN. BOLSILLO PLASTRÓN EN PECHO. CIERRE FRONTAL DE BOTONADURA.</p>
+                </div>
+
+                <div id="des2">
+                    <!--seleccion de color y talla-->
+                    <fieldset>
+                        <!--SELECION DE COLORES-->
+                        <legend>Colores</legend>
+                        <button id="color1" onclick="color1()" value="Verde"></button>
+                        <button id="color2" onclick="color2()" value="Granate"></button>
+                        <button id="color3" onclick="color3()" value="Azul"></button>
+                    </fieldset>
+                    <select name="talla_select" id="talla_select" onchange="talla_select()">
+                        <option value=0>talla</option>
+                        <option value=1>S</option>
+                        <option value=2>M</option>
+                        <option value=3>L</option>
+                    </select>
+                </div>
+
+                <div id="des3">
+                    <p id="precio">29,95 EUR</p>
+                    <button id="comprar" onclick="comprar()">Comprar</button>
+                </div>
+            </div>
+
+        </section>
+        <section id="extra">
+            <!--Ini seccion de Prendas de Interes-->
+            <h3>Prendas de interes</h3>
+
+            <div id="prendas_interes">
+                <div id="cuadro uno">
+                    <a href="Compra3.html">
+                        <img src="../img-ropa/Parka1-4.jpg" alt="">
+                        <p>PARKA TÉCNICA ACOLCHADA</p>
+                    </a>
+                </div>
+                <div id="cuadro dos">
+                    <a href="Compra4.html">
+                        <img src="../img-ropa/Parka2-4.jpg" alt="">
+                        <p>PARKA COMBINADO BORREGUILLO</p>
+                    </a>
+                </div>
+                <div id="cuadro tres">
+                    <a href="Compra9.html">
+                        <img src="../img-ropa/Camisa3-4.jpg" alt="">
+                        <p>CAMISA RAYAS FRANELA</p>
+                    </a>
+                </div>
+                <div id="cuadro cuatro">
+                    <a href="Compra11.html">
+                        <img src="../img-ropa/Pantalón2-4.jpg" alt="">
+                        <p>PANTALÓN CINTURA JOGGER PLIEGUES</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <!--Ini Footer-->
+        <footer>
+            <address>
+                <br><br>
+                Logo
+                <br>
+                Tienda de ropa masculina
+                <br>
+                C. Ignacio Merino 525,
+                <br>
+                Miraflores 15074
+                <br><br><br>
+            </address>
+            <div id="horarios">
+                <br><br>
+                Nuestros horarios<br><br>
+                Lunes a viernes:<br>
+                De 9am a 7pm.<br>
+                Sábados y domingos:<br>
+                De 10am a 10pm.
+                <br><br><br><br>
+            </div>
+
+            <ul>
+                <br>
+                <li><a href="http://#" target="_blank">Nuestros proveedores</a></li>
+                <li><a href="http://#" target="_blank">Locales cercanos</a></li>
+                <li><a href="http://#" target="_blank">Trabaja con nosotros</a></li>
+                <li><a href="http://#" target="_blank">Libro de reclamaciones</a></li>
+                <li><a href="http://#" target="_blank">Política de privacidad</a></li>
+                <br><br>
+            </ul>
+            <ul>
+                <br>
+                <li><a href="http://#" target="_blank">Whatsapp</a></li>
+                <li><a href="http://#" target="_blank">Instagram</a></li>
+                <li><a href="http://#" target="_blank">Facebook</a></li>
+                <li><a href="http://#" target="_blank">Twitter</a></li>
+                <li><a href="http://#" target="_blank">Pinterest</a></li>
+                <br><br>
+            </ul>
+        </footer>
+
+        <script src="../CompraScript.js"></script>
+    </DIV>
+    <DIV id="CuadroPedido">
+        <button id="cerrar" onclick="cerrar()">X</button>
+        <div id="pedido">
+            <h1>Pedido</h1>
+            <p>CAMISA CUADROS FRANELA</p>
+            <p>Color: <span id="colorM">Seleccione un Color</span></p>
+            <p>Talla: <span id="talla">Seleccione una Talla</span></p>
+            <p>Precio: 29,95 EUR</p>
+
+        </div>
+    </DIV>
+</body>
+
+</html>
